@@ -5,3 +5,5 @@ export function buyCake() {
     type: BUY_CAKE,
   };
 }
+
+// console.log(buyCake());

@@ -3,13 +3,13 @@ import { buyCake } from "../redux/cake/cakeAction";
 
 const CakeContainer = () => {
 
-    const numOfCake = useSelector(state => state.numOfCake) ; 
+    const numOfCake = useSelector(state => state.cake.numOfCake) ; 
     const dispatch = useDispatch()
 
     return (  
         <div> 
           <h2> number Of Cakes : {numOfCake} </h2>
-          <button onClick={() =>console.log()} > buyCake</button>
+          <button onClick={() => dispatch(buyCake())} > buyCake</button>
         </div>
     );
 }
